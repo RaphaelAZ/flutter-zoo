@@ -29,10 +29,6 @@ class FlutterZooHome extends StatefulWidget {
 }
 
 class _FlutterZooHomeState extends State<FlutterZooHome> {
-  void _gotoJungle() {
-    setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +56,7 @@ class _FlutterZooHomeState extends State<FlutterZooHome> {
               height: 500,
               padding: const EdgeInsets.all(8.0),
             ),
-            TextButton(
+            ElevatedButton(
               style: ButtonStyle(
                 foregroundColor: WidgetStateProperty<Color>.fromMap(<WidgetStatesConstraint, Color>{
                   WidgetState.focused: Colors.blueAccent,
